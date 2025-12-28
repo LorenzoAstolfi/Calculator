@@ -28,7 +28,7 @@ while verify:
     oper = operation[input("+\n-\n*\n/\nPick an operation: ")]
     S_Num = float(input("What's the second number: "))
     Result = oper(n1 = F_Num, n2 = S_Num)
-    print(f"{F_Num} + {S_Num} = {Result}")
+    print(f"{F_Num} {oper} {S_Num} = {Result}")
     while input(f"Type 'y' to continue calculating with {Result}, or type 'n' to start a new calculation: ").lower() == "y":
         oper = operation[input("+\n-\n*\n/\nPick an operation: ")]
         F_Num = float(input("What's the successive number: "))
