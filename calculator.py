@@ -32,6 +32,6 @@ while verify:
     while input(f"Type 'y' to continue calculating with {Result}, or type 'n' to start a new calculation: ").lower() == "y":
         oper = input("+\n-\n*\n/\nPick an operation: ")
         F_Num = float(input("What's the successive number: "))
-        print(f"{Result} {oper} {F_Num} = {oper(n1 = Result, n2 = F_Num)}")
+        print(f"{Result} {oper} {F_Num} = {operation[oper](n1 = F_Num, n2 = S_Num)}")
         Result = operation[oper](n1 = F_Num, n2 = S_Num)
     os.system('cls||clear')
